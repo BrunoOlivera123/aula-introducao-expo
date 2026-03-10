@@ -3,10 +3,12 @@ import { StyleSheet, View } from 'react-native';
 
 import Exemplo01 from './src/exemplos/ex-01';
 
+import Atividade01 from './src/atividades/atv01';
+
 export default function App() {
   return (
     <View style={styles.container}>
-       <Exemplo01 />
+       <Atividade01/>
       <StatusBar style= "auto" />
     </View>
   );
@@ -21,3 +23,4 @@ const styles = StyleSheet.create({
     // justifyContent: 'center',
   },
 });
+
