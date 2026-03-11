@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     }, 
     mensagem: {
         fontSize: RFPercentage(2), 
-        color: '#222',
+        color: '#000000',
     }, 
 });
 
