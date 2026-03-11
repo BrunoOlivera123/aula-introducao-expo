@@ -9,7 +9,7 @@ import Atividade01 from './src/atividades/atv01';
 export default function App() {
   return (
     <View style={styles.container}>
-       <Exemplo02/>
+       <Exemplo02 />
       <StatusBar style= "auto" />
     </View>
   );
