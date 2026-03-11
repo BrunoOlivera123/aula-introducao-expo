@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         width: '100%',
         textAlign: 'center',
         fontWeight: 'bold',
-        marginBottom: RFPercentage0 (5),
+        marginBottom: RFPercentage (5),
     },
     texto: {
         fontSize: RFPercentage (2),
