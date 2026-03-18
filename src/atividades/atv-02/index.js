@@ -2,28 +2,41 @@ import { View, Text, Image } from 'react-native';
 
 import styles from './styles';
 
-//import img from '../../../assets/002-1-react-native.png'; 
-import imgvg from '../../../assets/vegas.webp'; 
-import imgaf from '../../../assets/after.png'; 
+import imgpw from '../../../assets/power.png'; 
+import imgwd from '../../../assets/word-removebg-preview.png';
+import imgex from '../../../assets/excel.png'; 
 
 import Mensagem from './mensagens';
+import Card from './mensagens';
 
 function Atividade02 () {
     return(
         <View style={styles.container}>
-            <Text style={styles.titulo}>Atividade 2</Text>
-            <Image source={imgvg} style={styles.imagem} /> 
-             <Image source={imgaf} style={styles.imagem} /> 
+            <Text style={styles.titulo}>Pacote Office</Text>
+           
+            <Card 
+                titulo={'Word'} 
+                descricao={'Arquivo para textos.'}
+                valor= {'R$ 999,99'}
+                img = {imgwd}
+            />
+                    
+            <Card 
+                titulo={'Excel'}
+                descricao={'Aplicativo para planilhas'}
+                valor= {'R$ 999,99'}
+                img = {imgex}
+            />
 
-            <Mensagem titulo={'Sony Vegas Pro 22'} >
-                Editor de videos.
-            </Mensagem>
-            <Mensagem titulo={'After Efects 2025'}>
-                Editor de efeitos.
-            </Mensagem>
-            <Mensagem titulo={'Photoshop 2025'}>
-                Editor de imagens.
-            </Mensagem>
+            <Card 
+                titulo={'Power Point'}
+                descricao={'Aplicativo para apresentaçoes'}
+                valor= {'R$ 999,99'}
+                img = {imgpw}
+            
+            />
+                
+                
         </View>
     );
 }

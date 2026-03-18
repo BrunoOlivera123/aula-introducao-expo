@@ -1,14 +1,19 @@
-import { View, Text } from 'react-native'; 
+import { View, Text, Image } from 'react-native'; 
 
 import styles from './styles';
 
-function Mensagem({titulo, children}) {
+function Card({titulo, descricao, valor, img }) {
     return(
         <View style={styles.container} imagem >
-            <Text style={styles.titulo}>{titulo}</Text>
-            <Text style={styles.mensagem}>{children}</Text>
+            <Image source={img} style={styles.imagem} />
+           
+            <View>
+                <Text style={styles.titulo}>{titulo}</Text> 
+                <Text style={styles.descricao}>{descricao}</Text>
+                <Text style={styles.valor}>{valor}</Text>
+            </View>
         </View>
     );
 }
 
-export default Mensagem;
+export default Card;
