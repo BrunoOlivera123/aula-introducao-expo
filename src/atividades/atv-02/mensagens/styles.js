@@ -9,11 +9,11 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         borderWidth: RFPercentage(0.3), 
         borderColor: 'darkslategrey', 
-        padding: RFPercentage(.5), 
-        borderRadius: RFPercentage(2.5), 
+        padding: RFPercentage(.1), 
+        borderRadius: RFPercentage(5.5), 
         width: '90%', 
         alignItems: 'center', 
-        marginBottom: RFPercentage(2), 
+        marginBottom: RFPercentage(2),
         
     }, 
     titulo: {
