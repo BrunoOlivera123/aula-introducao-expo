@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, Text, Button,  TouchableOpacity } from 'react-native';
+import { View, Text, Button, zerar,  TouchableOpacity } from 'react-native';
 
 import styles from './styles';
 
@@ -10,11 +10,13 @@ function Atividade03() {
     function handleIncrementa() {
         setNumero(numero + 1);
     }
+     function handleIncrementa() {
+        setNumero(numero + 1);
  
-    const handleExibeBotao2 = () => {
+    const handleExibeBotaozerar = () => {
          setNumero(numero - 1);
     }
-
+    }
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Atividade 3</Text>
@@ -25,6 +27,13 @@ function Atividade03() {
                     title='-'
                     color={'darkslategrey'}
                     onPress={handleExibeBotao2}
+                />
+            </View>
+             <View style={styles.zerar}>
+                <Button
+                    title='-'
+                    color={'darkslategrey'}
+                    onPress={handleExibeBotaozerar}
                 />
             </View>
 

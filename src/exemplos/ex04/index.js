@@ -7,7 +7,7 @@ export default function Exemplo04() {
 
     const [texto, setTexto] = useState('');
     const [txt2, setTxt2] = useState('Valor inicial'); 
-    const [mensagem, setMensagem] = useState(''); 
+    const [mensagem, setMensagem] = useState(' '); 
 
     function handleExibeMensagem() {
         setMensagem(txt2);
