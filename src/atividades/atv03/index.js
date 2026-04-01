@@ -18,7 +18,7 @@ function Atividade03() {
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Atividade 3</Text>
-            <Text style={styles.texto}>+ | -</Text>
+            <Text style={styles.texto}> + | - </Text>
 
             <View style={styles.botaoAlert}>
                 <Button
