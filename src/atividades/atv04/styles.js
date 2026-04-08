@@ -5,8 +5,9 @@ const styles = StyleSheet.create(
     {
         container: { 
             flex: 1,
-            backgroundColor: '#fafafa', 
-            alignItems: 'center',             
+            backgroundColor: '#ffffff', 
+            alignItems: 'center',     
+            borderRadius: RFPercentage(2),         
         }, 
         titulo: {
             fontSize: RFPercentage(5), 
@@ -16,15 +17,17 @@ const styles = StyleSheet.create(
         }, 
         txt: {
             fontSize: RFPercentage(2.5), 
+            marginBottom: RFPercentage(2),
         }, 
         input: {
             borderWidth: RFPercentage(0.5), 
             borderColor: 'darkslategrey', 
             width: '80%', 
-            borderRadius: RFPercentage(1.5), 
+            borderRadius: RFPercentage(2), 
             padding: RFPercentage(1.5), 
             fontSize: RFPercentage(2), 
             textAlign: 'center',
+            marginBottom: RFPercentage(3),
         }, 
         botao: {
             backgroundColor: 'darkslategrey', 

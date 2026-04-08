@@ -1,23 +1,51 @@
-import * as React from 'react';
-import { View, StyleSheet } from 'react-native';
-import Constants from 'expo-constants';
+import { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 
-import Index from './src/atividades/atv04';
+import styles from './styles';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Index />
-    </View>
-  );
+export default function Atividade04() {
+
+    const [nome, setnome] = useState('');
+    const [sobrenome, setsobrenome] = useState(''); 
+    const [nomecompleto, setnomecompleto] = useState(''); 
+
+    function handleExibeMensagem() {
+        setnomecompleto(` ${nome} ${sobrenome}` );
+        setnome(' ');
+        setsobrenome(' ');
+    }
+
+    return (
+        <View style={styles.container}>
+            <Text style={styles.titulo}>Atividade 4</Text>
+
+            <Text style={styles.txt}>{nomecompleto}</Text>
+
+            <TextInput
+                onChangeText={setnome}
+                value = {nome}
+                placeholder = 'Nome'
+                maxLength = {10}
+                style = {styles.input}
+            />
+
+            <TextInput
+                onChangeText={setsobrenome}
+                value = {sobrenome}
+                placeholder = 'Sobrenome'   
+                maxLength = {10}         
+                style = {styles.input}
+            />
+
+            <TouchableOpacity 
+                style={styles.botao} 
+                onPress={() => handleExibeMensagem()}
+            >
+                <Text style={styles.txtBotao}>Exibir nome completo</Text>
+            </TouchableOpacity> 
+
+        </View>
+    );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#B7F1C1',
-    padding: 8,
-  },
-});
+
