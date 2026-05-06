@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     },
     btnPress: {
         borderWidth: RFValue(4),
-        borderColor: '#1100ff8e',
+        borderColor: '#0000008e',
     },
 });
 
