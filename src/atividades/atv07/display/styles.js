@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: RFValue(18),
         justifyContent: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        backgroundColor: 'rgba(54, 54, 54, 0.82)',
         alignItems: 'flex-end',
         width: '100%',
     },

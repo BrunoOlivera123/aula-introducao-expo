@@ -6,7 +6,7 @@ import Display from './display';
 
 import styles from './styles';
 
-export default function Exemplo7() {
+export default function Atividade07 () {
 
     const [displayValue, setDisplayValue] = useState('0');
     const [clearDisplay, setClearDisplay] = useState(false);
