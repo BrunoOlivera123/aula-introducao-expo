@@ -25,7 +25,7 @@ const style = StyleSheet.create({
     gameBoard: {
         alignItems: 'center',
         justifyContent: 'center',
-        height: '80%',
+        height: '50%',
     },
     boardRow: {
         flexDirection: 'row',
